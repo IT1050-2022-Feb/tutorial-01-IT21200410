@@ -20,5 +20,24 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 int main() {
   
+
+  int distance = 0;
+  float amount = 0;
+
+
+  printf("Enter the distance: ");
+  scanf("%d", &distance);
+
+  if ( distance <= 30)
+  {
+    amount = distance*50.0;
+  }
+  else
+  {
+    amount = (30*50) + (distance-30)*40;
+  }
+
+
+  printf("\n\nAmount : %.2f\n", amount);
   return 0;
 }
